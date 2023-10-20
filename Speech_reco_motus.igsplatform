@@ -26,52 +26,6 @@
                     "inputs": [
                         {
                             "description": "",
-                            "name": "voice",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "Speech_reco",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "word",
-                            "type": "STRING"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": "1.0"
-                },
-                "identity": "Speech_reco",
-                "instances": [
-                    {
-                        "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\venv\\Scripts\\python.exe C:/Users/trani/Desktop/speech-reco-motus/Speech_reco/src/main.py --device Wi-Fi",
-                        "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.141.231",
-                        "mac": "0C:9A:3C:57:E4:73"
-                    }
-                ],
-                "view": {
-                    "height": 40,
-                    "isCollapsed": false,
-                    "positionX": 400,
-                    "positionY": 261,
-                    "positionZ": 8.109999999999872,
-                    "width": 252
-                }
-            },
-            {
-                "data": {
-                },
-                "definition": {
-                    "description": "",
-                    "family": "",
-                    "inputs": [
-                        {
-                            "description": "",
                             "name": "title",
                             "type": "STRING"
                         },
@@ -466,14 +420,20 @@
                         "hostname": "LAPTOP-G6CQMDG6",
                         "ipAddress": "172.17.141.231",
                         "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
+                        "hostname": "LAPTOP-G6CQMDG6",
+                        "ipAddress": "172.17.141.231",
+                        "mac": "0C:9A:3C:57:E4:73"
                     }
                 ],
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 1042,
-                    "positionY": 427,
-                    "positionZ": 8.019999999999873,
+                    "positionX": 900,
+                    "positionY": 274,
+                    "positionZ": 8.279999999999868,
                     "width": 252
                 }
             },
@@ -512,9 +472,9 @@
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 403,
-                    "positionY": 477,
-                    "positionZ": 8.129999999999871,
+                    "positionX": 640,
+                    "positionY": 559,
+                    "positionZ": 8.349999999999866,
                     "width": 252
                 }
             }
@@ -539,21 +499,21 @@
                 "toOutput": "command"
             },
             {
-                "fromAgent": "Speech_reco",
-                "fromInput": "voice",
-                "toAgent": "5c181570-e3d8-4e08-8ea5-59c759e37ca3",
-                "toOutput": "value"
-            },
-            {
-                "fromAgent": "6fdb6dbc-2b42-473b-ac5b-c676ced211af",
-                "fromInput": "wildcard",
-                "toAgent": "Speech_reco",
-                "toOutput": "word"
-            },
-            {
                 "fromAgent": "Motus_game",
                 "fromInput": "word",
                 "toAgent": "ff960efb-dc4b-42b3-9ecc-340516b670ce",
+                "toOutput": "value"
+            },
+            {
+                "fromAgent": "Whiteboard",
+                "fromInput": "backgroundColor",
+                "toAgent": "0423ed40-2107-4738-a588-0cc1ac5ea2e3",
+                "toOutput": "value"
+            },
+            {
+                "fromAgent": "Whiteboard",
+                "fromInput": "title",
+                "toAgent": "1d5397c7-24a0-476b-9c50-d97047646846",
                 "toOutput": "value"
             }
         ],
@@ -848,83 +808,7 @@
             },
             {
                 "data": {
-                    "entry 0": ""
-                },
-                "definition": {
-                    "description": "",
-                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "trigger",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "value",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "5c181570-e3d8-4e08-8ea5-59c759e37ca3",
-                "instances": [
-                ],
-                "view": {
-                    "height": 52,
-                    "isCollapsed": false,
-                    "positionX": 47,
-                    "positionY": 281,
-                    "positionZ": 8.099999999999872,
-                    "width": 256
-                }
-            },
-            {
-                "data": {
-                },
-                "definition": {
-                    "description": "",
-                    "family": "7fc274c8-b06e-429b-9d09-d14878381016",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "wildcard",
-                            "type": "WILDCARD_SINGLE_MAPPING"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "6fdb6dbc-2b42-473b-ac5b-c676ced211af",
-                "instances": [
-                ],
-                "view": {
-                    "height": 46,
-                    "isCollapsed": false,
-                    "positionX": 790,
-                    "positionY": 254,
-                    "positionZ": 8.119999999999871,
-                    "width": 180
-                }
-            },
-            {
-                "data": {
-                    "entry 0": "Test"
+                    "entry 0": "Caht"
                 },
                 "definition": {
                     "description": "",
@@ -957,9 +841,91 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 32,
-                    "positionY": 499,
-                    "positionZ": 8.079999999999872,
+                    "positionX": 298,
+                    "positionY": 566,
+                    "positionZ": 8.359999999999866,
+                    "width": 256
+                }
+            },
+            {
+                "data": {
+                    "entry 0": "#AED6F1"
+                },
+                "definition": {
+                    "description": "",
+                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
+                    "inputs": [
+                        {
+                            "description": "",
+                            "name": "trigger",
+                            "type": "IMPULSION"
+                        }
+                    ],
+                    "isDynamic": false,
+                    "name": "",
+                    "outputs": [
+                        {
+                            "description": "",
+                            "name": "value",
+                            "type": "STRING"
+                        }
+                    ],
+                    "parameters": [
+                    ],
+                    "services": [
+                    ],
+                    "version": ""
+                },
+                "identity": "0423ed40-2107-4738-a588-0cc1ac5ea2e3",
+                "instances": [
+                ],
+                "view": {
+                    "height": 52,
+                    "isCollapsed": false,
+                    "positionX": 505,
+                    "positionY": 329,
+                    "positionZ": 8.319999999999867,
+                    "width": 256
+                }
+            },
+            {
+                "data": {
+                    "entry 0": "Motusrico"
+                },
+                "definition": {
+                    "description": "",
+                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
+                    "inputs": [
+                        {
+                            "description": "",
+                            "name": "trigger",
+                            "type": "IMPULSION"
+                        }
+                    ],
+                    "isDynamic": false,
+                    "name": "",
+                    "outputs": [
+                        {
+                            "description": "",
+                            "name": "value",
+                            "type": "STRING"
+                        }
+                    ],
+                    "parameters": [
+                    ],
+                    "services": [
+                    ],
+                    "version": ""
+                },
+                "identity": "1d5397c7-24a0-476b-9c50-d97047646846",
+                "instances": [
+                ],
+                "view": {
+                    "height": 52,
+                    "isCollapsed": false,
+                    "positionX": 499,
+                    "positionY": 201,
+                    "positionZ": 8.329999999999867,
                     "width": 256
                 }
             }
