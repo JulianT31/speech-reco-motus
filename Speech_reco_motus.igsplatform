@@ -426,14 +426,20 @@
                         "hostname": "LAPTOP-G6CQMDG6",
                         "ipAddress": "172.17.141.231",
                         "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "H:\\Bureau\\speech-reco-motus\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
+                        "hostname": "DESKTOP-N0EGV2S",
+                        "ipAddress": "192.168.1.24",
+                        "mac": "DC:41:A9:BA:5E:C3"
                     }
                 ],
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 900,
-                    "positionY": 274,
-                    "positionZ": 8.279999999999868,
+                    "positionX": 716,
+                    "positionY": 235,
+                    "positionZ": 8.489999999999863,
                     "width": 252
                 }
             },
@@ -467,14 +473,20 @@
                         "hostname": "LAPTOP-G6CQMDG6",
                         "ipAddress": "172.17.141.231",
                         "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "H:\\Bureau\\speech-reco-motus\\venv\\Scripts\\python.exe H:\\Bureau\\speech-reco-motus\\Motus_game\\src\\main.py --device Wi-Fi",
+                        "hostname": "DESKTOP-N0EGV2S",
+                        "ipAddress": "192.168.1.24",
+                        "mac": "DC:41:A9:BA:5E:C3"
                     }
                 ],
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 640,
-                    "positionY": 559,
-                    "positionZ": 8.349999999999866,
+                    "positionX": 650,
+                    "positionY": 561,
+                    "positionZ": 8.509999999999863,
                     "width": 252
                 }
             }
@@ -605,7 +617,7 @@
                     "isCollapsed": true,
                     "positionX": -598,
                     "positionY": 39,
-                    "positionZ": 8.029999999999873,
+                    "positionZ": 8.519999999999863,
                     "width": 268
                 }
             },
@@ -808,7 +820,7 @@
             },
             {
                 "data": {
-                    "entry 0": "Caht"
+                    "entry 0": "Cuit"
                 },
                 "definition": {
                     "description": "",
@@ -841,9 +853,9 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 298,
-                    "positionY": 566,
-                    "positionZ": 8.359999999999866,
+                    "positionX": 337,
+                    "positionY": 535,
+                    "positionZ": 8.559999999999862,
                     "width": 256
                 }
             },
@@ -882,9 +894,9 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 505,
-                    "positionY": 329,
-                    "positionZ": 8.319999999999867,
+                    "positionX": 335,
+                    "positionY": 328,
+                    "positionZ": 8.549999999999862,
                     "width": 256
                 }
             },
@@ -923,9 +935,9 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 499,
-                    "positionY": 201,
-                    "positionZ": 8.329999999999867,
+                    "positionX": 326,
+                    "positionY": 183,
+                    "positionZ": 8.539999999999862,
                     "width": 256
                 }
             }

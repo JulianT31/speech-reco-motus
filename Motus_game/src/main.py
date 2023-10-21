@@ -121,7 +121,7 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
         SQUARE_WIDTH = 100.0
         SQUARE_HEIGHT = 100.0
         FIRST_SQUARE_X = 100.0
-        FIRST_SQUARE_Y = 80.0
+        FIRST_SQUARE_Y = 150.0
         OFFSET_SQUARE = 100.0
         SPACE_BETWEEN_SQUARE = 10.0
 
@@ -142,6 +142,7 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
                 FIRST_SQUARE_Y + (SQUARE_HEIGHT * (motus_game.nb_try - 1)) + SPACE_BETWEEN_SQUARE + (SQUARE_WIDTH / 3),
                 "#000000")
             igs.service_call("Whiteboard", "addText", arguments_text, "")
+            time.sleep(0.2)
 
         igs.service_call("Whiteboard", "chat", "You tried : " + motus_game.wordI, "")
         motus_game.incr_nb_try()

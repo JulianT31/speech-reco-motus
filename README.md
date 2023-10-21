@@ -4,7 +4,7 @@ This repo is a little game like the real game Motus but with some speech recogni
 
 This repo is an UPSSITECH 3A project.
 
-Author : Julian TRANI & Pauline JOBERT
+Author : @JulianT31 & @PaulineJobs
 
 ![](assets/review_game.png)
 
