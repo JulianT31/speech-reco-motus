@@ -418,13 +418,13 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Downloads\\Whiteboard\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.141.231",
+                        "ipAddress": "172.17.139.126",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.141.231",
+                        "ipAddress": "172.17.139.126",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -471,7 +471,7 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\venv\\Scripts\\python.exe C:/Users/trani/Desktop/speech-reco-motus/Motus_game/src/main.py --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.141.231",
+                        "ipAddress": "172.17.139.126",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -484,9 +484,9 @@
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 650,
-                    "positionY": 561,
-                    "positionZ": 8.509999999999863,
+                    "positionX": 690,
+                    "positionY": 532,
+                    "positionZ": 8.569999999999862,
                     "width": 252
                 }
             }
@@ -526,6 +526,18 @@
                 "fromAgent": "Whiteboard",
                 "fromInput": "title",
                 "toAgent": "1d5397c7-24a0-476b-9c50-d97047646846",
+                "toOutput": "value"
+            },
+            {
+                "fromAgent": "Motus_game",
+                "fromInput": "word",
+                "toAgent": "ebe5f1bd-7f64-4924-933e-284527eeb9f9",
+                "toOutput": "value"
+            },
+            {
+                "fromAgent": "Motus_game",
+                "fromInput": "word",
+                "toAgent": "6e6fb4bb-74fd-4ee6-b4f1-32f9c4c32344",
                 "toOutput": "value"
             }
         ],
@@ -853,9 +865,9 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 337,
-                    "positionY": 535,
-                    "positionZ": 8.559999999999862,
+                    "positionX": 347,
+                    "positionY": 573,
+                    "positionZ": 8.749999999999858,
                     "width": 256
                 }
             },
@@ -894,9 +906,9 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 335,
-                    "positionY": 328,
-                    "positionZ": 8.549999999999862,
+                    "positionX": 330,
+                    "positionY": 296,
+                    "positionZ": 8.699999999999859,
                     "width": 256
                 }
             },
@@ -937,7 +949,89 @@
                     "isCollapsed": false,
                     "positionX": 326,
                     "positionY": 183,
-                    "positionZ": 8.539999999999862,
+                    "positionZ": 8.68999999999986,
+                    "width": 256
+                }
+            },
+            {
+                "data": {
+                    "entry 0": "Chat"
+                },
+                "definition": {
+                    "description": "",
+                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
+                    "inputs": [
+                        {
+                            "description": "",
+                            "name": "trigger",
+                            "type": "IMPULSION"
+                        }
+                    ],
+                    "isDynamic": false,
+                    "name": "",
+                    "outputs": [
+                        {
+                            "description": "",
+                            "name": "value",
+                            "type": "STRING"
+                        }
+                    ],
+                    "parameters": [
+                    ],
+                    "services": [
+                    ],
+                    "version": ""
+                },
+                "identity": "ebe5f1bd-7f64-4924-933e-284527eeb9f9",
+                "instances": [
+                ],
+                "view": {
+                    "height": 52,
+                    "isCollapsed": false,
+                    "positionX": 344,
+                    "positionY": 684,
+                    "positionZ": 8.759999999999858,
+                    "width": 256
+                }
+            },
+            {
+                "data": {
+                    "entry 0": "Heho"
+                },
+                "definition": {
+                    "description": "",
+                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
+                    "inputs": [
+                        {
+                            "description": "",
+                            "name": "trigger",
+                            "type": "IMPULSION"
+                        }
+                    ],
+                    "isDynamic": false,
+                    "name": "",
+                    "outputs": [
+                        {
+                            "description": "",
+                            "name": "value",
+                            "type": "STRING"
+                        }
+                    ],
+                    "parameters": [
+                    ],
+                    "services": [
+                    ],
+                    "version": ""
+                },
+                "identity": "6e6fb4bb-74fd-4ee6-b4f1-32f9c4c32344",
+                "instances": [
+                ],
+                "view": {
+                    "height": 52,
+                    "isCollapsed": false,
+                    "positionX": 346,
+                    "positionY": 462,
+                    "positionZ": 8.739999999999858,
                     "width": 256
                 }
             }
