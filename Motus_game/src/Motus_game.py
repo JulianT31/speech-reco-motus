@@ -10,6 +10,8 @@
 #
 # import ingescape as igs
 import ingescape as igs
+import random
+
 from Color import Color
 
 
@@ -29,10 +31,13 @@ class MotusGame(metaclass=Singleton):
         self.nb_try = 0
         self.nb_try_max = 4
         self.word_to_discover = ""
+        self.word_database = ["pomme", "fleur", "table", "soleil", "plage", "bonjour", "chien", "chaton", "orange",
+                              "forêt"]
         self.init_game()
 
     def init_game(self):
-        self.word_to_discover = "Chat"
+        self.word_to_discover = random.choice(self.word_database)
+        self.wordI = self.word_to_discover[0] + "_" * (len(self.word_to_discover) - 1)
         self.nb_try = 0
 
     def get_color_by_letter(self, letter, letter_index):

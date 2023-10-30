@@ -16,6 +16,7 @@ import time
 import traceback
 from pathlib import Path
 
+import Case
 from Motus_game import *
 
 port = 5670
@@ -116,57 +117,53 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
     try:
         motus_game = my_data
         assert isinstance(motus_game, MotusGame)
-        motus_game.wordI = value
-
-        SQUARE_WIDTH = 100.0
-        SQUARE_HEIGHT = 100.0
-        FIRST_SQUARE_X = 100.0
-        FIRST_SQUARE_Y = 150.0
-        OFFSET_SQUARE = 100.0
-        SPACE_BETWEEN_SQUARE = 10.0
-
-        for index, letter in enumerate(motus_game.wordI):
-            # display rect
-            arguments_shape = (
-                "rectangle",
-                FIRST_SQUARE_X + index * OFFSET_SQUARE,
-                FIRST_SQUARE_Y + (SQUARE_HEIGHT * (motus_game.nb_try - 1)) + SPACE_BETWEEN_SQUARE,
-                SQUARE_WIDTH,
-                SQUARE_HEIGHT,
-                motus_game.get_color_by_letter(letter, index), "black", 1.0)
-            igs.service_call("Whiteboard", "addShape", arguments_shape, "")
-
-            arguments_text = (
-                str(letter),
-                FIRST_SQUARE_X + index * OFFSET_SQUARE + (SQUARE_WIDTH / 3),
-                FIRST_SQUARE_Y + (SQUARE_HEIGHT * (motus_game.nb_try - 1)) + SPACE_BETWEEN_SQUARE + (SQUARE_WIDTH / 3),
-                "#000000")
-            igs.service_call("Whiteboard", "addText", arguments_text, "")
-            time.sleep(0.2)
+        motus_game.wordI = value.lower()
 
         igs.service_call("Whiteboard", "chat", "You tried : " + motus_game.wordI, "")
         motus_game.incr_nb_try()
+
+        display_letter(motus_game)
 
         if motus_game.is_win():
             igs.service_call("Whiteboard", "clear", None, "")
             igs.service_call("Whiteboard", "chat", "You win !", "")
             motus_game.reset_game()
+            init_game(motus_game)
         else:
             if motus_game.is_lose():
                 igs.service_call("Whiteboard", "clear", None, "")
                 igs.service_call("Whiteboard", "chat", "You lose :(", "")
                 motus_game.reset_game()
-
-
-
-
-
-
-
-
-
+                init_game(motus_game)
     except:
         print(traceback.format_exc())
+
+
+def display_letter(motus_game):
+    print("display letter", motus_game)
+    for index, letter in enumerate(motus_game.wordI):
+        # display rect
+        arguments_shape = (
+            "rectangle",
+            Case.FIRST_SQUARE_X + index * Case.OFFSET_SQUARE,
+            Case.FIRST_SQUARE_Y + (Case.SQUARE_HEIGHT * (motus_game.nb_try - 1)) + Case.SPACE_BETWEEN_SQUARE,
+            Case.SQUARE_WIDTH,
+            Case.SQUARE_HEIGHT,
+            motus_game.get_color_by_letter(letter, index), "black", 1.0)
+        igs.service_call("Whiteboard", "addShape", arguments_shape, "")
+
+        arguments_text = (
+            str(letter),
+            Case.FIRST_SQUARE_X + index * Case.OFFSET_SQUARE + (Case.SQUARE_WIDTH / 3),
+            Case.FIRST_SQUARE_Y + (Case.SQUARE_HEIGHT * (motus_game.nb_try - 1)) + Case.SPACE_BETWEEN_SQUARE + (
+                    Case.SQUARE_WIDTH / 3),
+            "#000000")
+        igs.service_call("Whiteboard", "addText", arguments_text, "")
+        time.sleep(0.2)
+
+
+def init_game(motus_game):
+    display_letter(motus_game)
 
 
 if __name__ == "__main__":
