@@ -10,6 +10,7 @@
 #
 
 import getopt
+import json
 import signal
 import sys
 import time
@@ -128,20 +129,24 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
             igs.service_call("Whiteboard", "clear", None, "")
             igs.service_call("Whiteboard", "chat", "You win !", "")
             motus_game.reset_game()
-            init_game(motus_game)
+            init_display(motus_game)
         else:
             if motus_game.is_lose():
-                igs.service_call("Whiteboard", "clear", None, "")
+                elements = igs.service_call("Whiteboard", "getElements", None, "")
+                print(elements)
+                # igs.service_call("Whiteboard", "clear", None, "")
                 igs.service_call("Whiteboard", "chat", "You lose :(", "")
                 motus_game.reset_game()
-                init_game(motus_game)
+                init_display(motus_game)
     except:
         print(traceback.format_exc())
 
 
 def display_letter(motus_game):
-    print("display letter", motus_game)
     for index, letter in enumerate(motus_game.wordI):
+        if index >= len(motus_game.word_to_discover):
+            break
+
         # display rect
         arguments_shape = (
             "rectangle",
@@ -162,12 +167,40 @@ def display_letter(motus_game):
         time.sleep(0.2)
 
 
-def init_game(motus_game):
+def on_agent_event_callback(event, uuid, name, event_data, my_data):
+    if event == igs.AGENT_KNOWS_US and name == "Whiteboard":
+        time.sleep(0.2)
+        igs.info(
+            f"Agent event {event} from agent {name} with uuid {uuid} received : event data {event_data}, agent object {my_data}")
+        igs.info(
+            f"Possible event types : peer entered {igs.PEER_ENTERED} / peer exited {igs.PEER_EXITED} / agent entered {igs.AGENT_ENTERED} / agent definition update {igs.AGENT_UPDATED_DEFINITION} / agent now knows us {igs.AGENT_KNOWS_US} / agent exited {igs.AGENT_EXITED} / agent mapping updated {igs.AGENT_UPDATED_MAPPING} / agent election won {igs.AGENT_WON_ELECTION} / agent election lost {igs.AGENT_LOST_ELECTION}")
+        igs.output_set_string("title", "Motus")
+        igs.output_set_string("backgroundColor", "#AED6F1")
+
+        print(my_data)
+        motus_game = my_data
+        assert isinstance(motus_game, MotusGame)
+        init_display(motus_game)
+
+    if event == igs.AGENT_EXITED and name == "Whiteboard":
+        motus_game = my_data
+        assert isinstance(motus_game, MotusGame)
+        motus_game.reset_game()
+
+
+def on_elements_callback(sender_agent_name, sender_agent_uuid, service_name, arguments, token, my_data):
+    for argument in json.loads(arguments[0]):
+        igs.service_call("Whiteboard", "remove", (argument["id"]), "")
+
+    print(
+        f"Service {service_name} was called by {sender_agent_name} ({sender_agent_uuid}) with arguments : {''.join(f'arg={argument} ' for argument in arguments)}")
+
+
+def init_display(motus_game):
     display_letter(motus_game)
 
 
 if __name__ == "__main__":
-
     # catch SIGINT handler before starting agent
     signal.signal(signal.SIGINT, signal_handler)
     interactive_loop = False
@@ -228,17 +261,22 @@ if __name__ == "__main__":
 
     agent = MotusGame()
 
-    igs.observe_agent_events(on_agent_event_callback, agent)
     igs.observe_freeze(on_freeze_callback, agent)
 
     igs.input_create("word", igs.STRING_T, None)
+    igs.output_create("title", igs.STRING_T, None)
+    igs.output_create("backgroundColor", igs.STRING_T, None)
 
     igs.observe_input("word", word_input_callback, agent)
 
+    igs.observe_agent_events(on_agent_event_callback, agent)
+
     # todo add a new service if we want the return value (elementCreated)
-    # igs.service_init("elementCreated", )
+    igs.service_init("elements", on_elements_callback, agent)
+    igs.service_arg_add("elements", "jsonArray", igs.STRING_T)
 
     igs.start_with_device(device, port)
+
     # catch SIGINT handler after starting agent
     signal.signal(signal.SIGINT, signal_handler)
 
