@@ -123,9 +123,8 @@ def push_to_talk_input_callback(iop_type, name, value_type, value, my_data):
         r = sr.Recognizer()
 
         with sr.Microphone() as source:
-
+            igs.service_call("Whiteboard", "chat", "Enregistrement en cours. Parlez maintenant...", "")
             print("Enregistrement en cours. Parlez maintenant...")
-
             audio = r.listen(source)
 
         try:
@@ -133,8 +132,10 @@ def push_to_talk_input_callback(iop_type, name, value_type, value, my_data):
             igs.output_set_string("word", texte)
             print("Texte reconnu : " + texte)
         except sr.UnknownValueError:
+            igs.service_call("Whiteboard", "chat", "Unable to recognise speech, try again please...", "")
             print("Impossible de reconnaître la parole")
         except sr.RequestError as e:
+            igs.service_call("Whiteboard", "chat", "Error when requesting voice recognition: {0}".format(e), "")
             print("Erreur lors de la demande de reconnaissance vocale : {0}".format(e))
 
     except:
