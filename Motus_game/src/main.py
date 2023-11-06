@@ -133,7 +133,7 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
         else:
             if motus_game.is_lose():
                 igs.service_call("Whiteboard", "getElements", None, "")
-                igs.service_call("Whiteboard", "chat", "You lost... ", "")
+                igs.service_call("Whiteboard", "chat", "You lost...", "")
                 igs.service_call("Whiteboard", "chat", "The word was " + str(motus_game.word_to_discover), "")
                 motus_game.reset_game()
                 init_display(motus_game)

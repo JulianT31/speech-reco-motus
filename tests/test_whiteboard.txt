@@ -2,3 +2,4 @@ Whiteboard.title = "Coucou"
 Whiteboard.title = "salut"
 assert Whiteboard.lastAction == "Input title: Coucou"
 assert Whiteboard.lastAction == "Input title: salut"
+
