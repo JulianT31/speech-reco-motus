@@ -437,9 +437,9 @@
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 705,
-                    "positionY": 126,
-                    "positionZ": 9.799999999999836,
+                    "positionX": 1144,
+                    "positionY": 526,
+                    "positionZ": 10.03999999999983,
                     "width": 252
                 }
             },
@@ -549,9 +549,9 @@
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 699,
-                    "positionY": 821,
-                    "positionZ": 8.769999999999857,
+                    "positionX": 649,
+                    "positionY": 297,
+                    "positionZ": 9.969999999999832,
                     "width": 252
                 }
             },
@@ -639,34 +639,16 @@
                     }
                 ],
                 "view": {
-                    "height": 40,
+                    "height": 72,
                     "isCollapsed": false,
-                    "positionX": 823,
-                    "positionY": 415,
-                    "positionZ": 9.809999999999835,
-                    "width": 252
+                    "positionX": 1105,
+                    "positionY": 169,
+                    "positionZ": 10.01999999999983,
+                    "width": 292
                 }
             }
         ],
         "mappings": [
-            {
-                "fromAgent": "71b71d03-f04f-4c44-846f-e9771c96c280",
-                "fromInput": "start",
-                "toAgent": "90664621-ce3f-4269-a16c-abfa3df37170",
-                "toOutput": "value"
-            },
-            {
-                "fromAgent": "71b71d03-f04f-4c44-846f-e9771c96c280",
-                "fromInput": "progress",
-                "toAgent": "1c0a715f-4495-4e05-9b16-c62c4bbce510",
-                "toOutput": "value"
-            },
-            {
-                "fromAgent": "5a8bed9b-5f91-4b11-98f4-48f37a585d47",
-                "fromInput": "wildcard",
-                "toAgent": "71b71d03-f04f-4c44-846f-e9771c96c280",
-                "toOutput": "command"
-            },
             {
                 "fromAgent": "Motus_game",
                 "fromInput": "word",
@@ -716,12 +698,6 @@
                 "toOutput": "backgroundColor"
             },
             {
-                "fromAgent": "80bdda2e-2712-44f3-8e2e-b20ceb11a957",
-                "fromInput": "wildcard",
-                "toAgent": "Motus_game",
-                "toOutput": "backgroundColor"
-            },
-            {
                 "fromAgent": "ec0adba8-a1a8-42a0-a66e-d0c7b5ef9caa",
                 "fromInput": "wildcard",
                 "toAgent": "Whiteboard",
@@ -739,290 +715,6 @@
         "splitters": [
         ],
         "tools": [
-            {
-                "data": {
-                    "command": "value={0}",
-                    "customEasingCurveValid": false,
-                    "duration": 5000,
-                    "easing": 10,
-                    "easingFirstControlPoint": "0.25;0.25",
-                    "easingSecondControlPoint": "0.75;0.75",
-                    "range 0": "0;0;100"
-                },
-                "definition": {
-                    "description": "",
-                    "family": "b8478876516341d7b3ea9ba82553ef8a",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "start",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "pause",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "stop",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "progress",
-                            "type": "INTEGER"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "Motion",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "command",
-                            "type": "STRING"
-                        },
-                        {
-                            "description": "",
-                            "name": "value",
-                            "type": "STRING"
-                        },
-                        {
-                            "description": "",
-                            "name": "started",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "paused",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "finished",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "progress",
-                            "type": "INTEGER"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "71b71d03-f04f-4c44-846f-e9771c96c280",
-                "instances": [
-                ],
-                "view": {
-                    "height": 85,
-                    "isCollapsed": true,
-                    "positionX": -598,
-                    "positionY": 39,
-                    "positionZ": 8.519999999999863,
-                    "width": 268
-                }
-            },
-            {
-                "data": {
-                    "entry 0": ""
-                },
-                "definition": {
-                    "description": "",
-                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "trigger",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "value",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "90664621-ce3f-4269-a16c-abfa3df37170",
-                "instances": [
-                ],
-                "view": {
-                    "height": 52,
-                    "isCollapsed": false,
-                    "positionX": -1020,
-                    "positionY": 38,
-                    "positionZ": 8.039999999999873,
-                    "width": 256
-                }
-            },
-            {
-                "data": {
-                },
-                "definition": {
-                    "description": "",
-                    "family": "7fc274c8-b06e-429b-9d09-d14878381016",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "wildcard",
-                            "type": "WILDCARD_SINGLE_MAPPING"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "5a8bed9b-5f91-4b11-98f4-48f37a585d47",
-                "instances": [
-                ],
-                "view": {
-                    "height": 46,
-                    "isCollapsed": false,
-                    "positionX": -550,
-                    "positionY": 199,
-                    "positionZ": 8.059999999999873,
-                    "width": 180
-                }
-            },
-            {
-                "data": {
-                    "entry 0": "5000"
-                },
-                "definition": {
-                    "description": "",
-                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "trigger",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "value",
-                            "type": "INTEGER"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "1c0a715f-4495-4e05-9b16-c62c4bbce510",
-                "instances": [
-                ],
-                "view": {
-                    "height": 52,
-                    "isCollapsed": false,
-                    "positionX": -1016,
-                    "positionY": 151,
-                    "positionZ": 8.049999999999873,
-                    "width": 256
-                }
-            },
-            {
-                "data": {
-                },
-                "definition": {
-                    "description": "",
-                    "family": "b8478876516341d7b3ea9ba82553ef8a",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "start",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "pause",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "stop",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "progress",
-                            "type": "INTEGER"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "Motion",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "command",
-                            "type": "STRING"
-                        },
-                        {
-                            "description": "",
-                            "name": "value",
-                            "type": "STRING"
-                        },
-                        {
-                            "description": "",
-                            "name": "started",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "paused",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "finished",
-                            "type": "IMPULSION"
-                        },
-                        {
-                            "description": "",
-                            "name": "progress",
-                            "type": "INTEGER"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "fa34c5cf-1195-4f48-888b-9f343d163fb9",
-                "instances": [
-                ],
-                "view": {
-                    "height": 85,
-                    "isCollapsed": false,
-                    "positionX": -772,
-                    "positionY": 334,
-                    "positionZ": 8.069999999999872,
-                    "width": 268
-                }
-            },
             {
                 "data": {
                     "entry 0": "Cuit"
@@ -1181,9 +873,9 @@
                 "view": {
                     "height": 52,
                     "isCollapsed": false,
-                    "positionX": 361,
-                    "positionY": 857,
-                    "positionZ": 9.849999999999834,
+                    "positionX": 346,
+                    "positionY": 324,
+                    "positionZ": 9.959999999999832,
                     "width": 256
                 }
             },
@@ -1215,12 +907,12 @@
                 "instances": [
                 ],
                 "view": {
-                    "height": 55,
+                    "height": 46,
                     "isCollapsed": false,
-                    "positionX": 1091,
-                    "positionY": 165,
-                    "positionZ": 9.399999999999844,
-                    "width": 354
+                    "positionX": 1577,
+                    "positionY": 556,
+                    "positionZ": 10.04999999999983,
+                    "width": 180
                 }
             },
             {
@@ -1250,47 +942,12 @@
                 "instances": [
                 ],
                 "view": {
-                    "height": 131,
-                    "isCollapsed": false,
-                    "positionX": 1088,
-                    "positionY": 270,
-                    "positionZ": 9.839999999999835,
-                    "width": 467
-                }
-            },
-            {
-                "data": {
-                },
-                "definition": {
-                    "description": "",
-                    "family": "7fc274c8-b06e-429b-9d09-d14878381016",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "wildcard",
-                            "type": "WILDCARD_SINGLE_MAPPING"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "80bdda2e-2712-44f3-8e2e-b20ceb11a957",
-                "instances": [
-                ],
-                "view": {
                     "height": 46,
                     "isCollapsed": false,
-                    "positionX": 1176,
-                    "positionY": 488,
-                    "positionZ": 9.669999999999838,
-                    "width": 180
+                    "positionX": 1575,
+                    "positionY": 629,
+                    "positionZ": 10.05999999999983,
+                    "width": 189
                 }
             }
         ]
