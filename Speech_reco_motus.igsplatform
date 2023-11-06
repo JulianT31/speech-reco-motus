@@ -544,6 +544,12 @@
                         "hostname": "LAPTOP-G6CQMDG6",
                         "ipAddress": "172.17.57.178",
                         "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "H:\\Bureau\\speech-reco-motus\\venv\\Scripts\\python.exe H:\\Bureau\\speech-reco-motus\\Speech_reco\\src\\main.py --device Wi-Fi",
+                        "hostname": "DESKTOP-N0EGV2S",
+                        "ipAddress": "192.168.1.24",
+                        "mac": "DC:41:A9:BA:5E:C3"
                     }
                 ],
                 "view": {
@@ -641,9 +647,9 @@
                 "view": {
                     "height": 72,
                     "isCollapsed": false,
-                    "positionX": 1105,
-                    "positionY": 169,
-                    "positionZ": 10.01999999999983,
+                    "positionX": 1112,
+                    "positionY": 302,
+                    "positionZ": 10.109999999999829,
                     "width": 292
                 }
             }
@@ -680,12 +686,6 @@
                 "toOutput": "value"
             },
             {
-                "fromAgent": "5604ddb5-13ed-4aa5-9c02-5970ceeb4b77",
-                "fromInput": "wildcard",
-                "toAgent": "Whiteboard",
-                "toOutput": "lastChatMessage"
-            },
-            {
                 "fromAgent": "Whiteboard",
                 "fromInput": "title",
                 "toAgent": "Motus_game",
@@ -696,12 +696,6 @@
                 "fromInput": "backgroundColor",
                 "toAgent": "Motus_game",
                 "toOutput": "backgroundColor"
-            },
-            {
-                "fromAgent": "ec0adba8-a1a8-42a0-a66e-d0c7b5ef9caa",
-                "fromInput": "wildcard",
-                "toAgent": "Whiteboard",
-                "toOutput": "lastAction"
             },
             {
                 "fromAgent": "igs",
@@ -834,7 +828,7 @@
                     "isCollapsed": false,
                     "positionX": 346,
                     "positionY": 462,
-                    "positionZ": 9.829999999999835,
+                    "positionZ": 10.07999999999983,
                     "width": 256
                 }
             },
@@ -875,79 +869,8 @@
                     "isCollapsed": false,
                     "positionX": 346,
                     "positionY": 324,
-                    "positionZ": 9.959999999999832,
+                    "positionZ": 10.119999999999829,
                     "width": 256
-                }
-            },
-            {
-                "data": {
-                    "string_decoder": "PLAIN_TEXT"
-                },
-                "definition": {
-                    "description": "",
-                    "family": "7fc274c8-b06e-429b-9d09-d14878381016",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "wildcard",
-                            "type": "WILDCARD_SINGLE_MAPPING"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "5604ddb5-13ed-4aa5-9c02-5970ceeb4b77",
-                "instances": [
-                ],
-                "view": {
-                    "height": 46,
-                    "isCollapsed": false,
-                    "positionX": 1577,
-                    "positionY": 556,
-                    "positionZ": 10.04999999999983,
-                    "width": 180
-                }
-            },
-            {
-                "data": {
-                },
-                "definition": {
-                    "description": "",
-                    "family": "7fc274c8-b06e-429b-9d09-d14878381016",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "wildcard",
-                            "type": "WILDCARD_SINGLE_MAPPING"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "ec0adba8-a1a8-42a0-a66e-d0c7b5ef9caa",
-                "instances": [
-                ],
-                "view": {
-                    "height": 46,
-                    "isCollapsed": false,
-                    "positionX": 1575,
-                    "positionY": 629,
-                    "positionZ": 10.05999999999983,
-                    "width": 189
                 }
             }
         ]

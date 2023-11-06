@@ -126,18 +126,18 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
         display_letter(motus_game)
 
         if motus_game.is_win():
-            igs.service_call("Whiteboard", "clear", None, "")
+            igs.service_call("Whiteboard", "getElements", None, "")
             igs.service_call("Whiteboard", "chat", "You win !", "")
             motus_game.reset_game()
             init_display(motus_game)
         else:
             if motus_game.is_lose():
-                elements = igs.service_call("Whiteboard", "getElements", None, "")
-                print(elements)
-                # igs.service_call("Whiteboard", "clear", None, "")
-                igs.service_call("Whiteboard", "chat", "You lose :(", "")
+                igs.service_call("Whiteboard", "getElements", None, "")
+                igs.service_call("Whiteboard", "chat", "You lost... ", "")
+                igs.service_call("Whiteboard", "chat", "The word was " + str(motus_game.word_to_discover), "")
                 motus_game.reset_game()
                 init_display(motus_game)
+
     except:
         print(traceback.format_exc())
 
