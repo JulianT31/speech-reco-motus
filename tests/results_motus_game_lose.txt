@@ -1,0 +1,50 @@
+C:\Program Files\Ingescape\Ingescape Circle>igs.exe --device Wi-Fi --port 5670 --script C:\Users\trani\Desktop\speech-reco-motus\tests\test_motus_game_lose.txt
+10/11/2023;13:15:56.000784; script              | C:\Users\trani\Desktop\speech-reco-motus\tests\test_motus_game_lose.txt
+warning: did not find type for Whiteboard.lastAction in loaded platform, using IGS_STRING_T as default
+10/11/2023;13:15:59.000137; running             | C:\Users\trani\Desktop\speech-reco-motus\tests\test_motus_game_lose.txt
+10/11/2023;13:15:59.000141; allocate            | Motus_game i word clef
+10/11/2023;13:15:59.000145; assert OK           | Whiteboard.lastAction == Service chat: You tried : clef
+10/11/2023;13:15:59.000148; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 100, 160, 60, 60, #(.*), #000000, 1
+10/11/2023;13:15:59.000150; assert OK           | Whiteboard.lastAction == Service addText: 120, 180, c, #000000
+10/11/2023;13:15:59.000363; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 160, 160, 60, 60, #(.*), #000000, 1
+10/11/2023;13:15:59.000374; assert OK           | Whiteboard.lastAction == Service addText: 180, 180, l, #000000
+10/11/2023;13:15:59.000564; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 220, 160, 60, 60, #(.*), #000000, 1
+10/11/2023;13:15:59.000571; assert OK           | Whiteboard.lastAction == Service addText: 240, 180, e, #000000
+10/11/2023;13:15:59.000766; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 280, 160, 60, 60, #(.*), #000000, 1
+10/11/2023;13:15:59.000770; assert OK           | Whiteboard.lastAction == Service addText: 300, 180, f, #000000
+10/11/2023;13:15:59.000772; allocate            | Motus_game i word chat
+10/11/2023;13:15:59.000970; assert OK           | Whiteboard.lastAction == Service chat: You tried : chat
+10/11/2023;13:15:59.000973; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 100, 220, 60, 60, #(.*), #000000, 1
+10/11/2023;13:15:59.000976; assert OK           | Whiteboard.lastAction == Service addText: 120, 240, c, #000000
+10/11/2023;13:16:00.000174; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 160, 220, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:00.000179; assert OK           | Whiteboard.lastAction == Service addText: 180, 240, h, #000000
+10/11/2023;13:16:00.000377; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 220, 220, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:00.000386; assert OK           | Whiteboard.lastAction == Service addText: 240, 240, a, #000000
+10/11/2023;13:16:00.000580; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 280, 220, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:00.000586; assert OK           | Whiteboard.lastAction == Service addText: 300, 240, t, #000000
+10/11/2023;13:16:00.000588; allocate            | Motus_game i word ciel
+10/11/2023;13:16:00.000786; assert OK           | Whiteboard.lastAction == Service chat: You tried : ciel
+10/11/2023;13:16:00.000789; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 100, 280, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:00.000792; assert OK           | Whiteboard.lastAction == Service addText: 120, 300, c, #000000
+10/11/2023;13:16:01.000002; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 160, 280, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:01.000007; assert OK           | Whiteboard.lastAction == Service addText: 180, 300, i, #000000
+10/11/2023;13:16:01.000204; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 220, 280, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:01.000209; assert OK           | Whiteboard.lastAction == Service addText: 240, 300, e, #000000
+10/11/2023;13:16:01.000421; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 280, 280, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:01.000425; assert OK           | Whiteboard.lastAction == Service addText: 300, 300, l, #000000
+10/11/2023;13:16:01.000427; allocate            | Motus_game i word cuir
+10/11/2023;13:16:01.000627; assert OK           | Whiteboard.lastAction == Service chat: You tried : cuir
+10/11/2023;13:16:01.000633; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 100, 340, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:01.000635; assert OK           | Whiteboard.lastAction == Service addText: 120, 360, c, #000000
+10/11/2023;13:16:01.000842; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 160, 340, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:01.000846; assert OK           | Whiteboard.lastAction == Service addText: 180, 360, u, #000000
+10/11/2023;13:16:02.000045; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 220, 340, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:02.000056; assert OK           | Whiteboard.lastAction == Service addText: 240, 360, i, #000000
+10/11/2023;13:16:02.000263; assert OK           | Whiteboard.lastAction ~ Service addShape: rectangle, 280, 340, 60, 60, #(.*), #000000, 1
+10/11/2023;13:16:02.000266; assert OK           | Whiteboard.lastAction == Service addText: 300, 360, r, #000000
+10/11/2023;13:16:02.000464; assert OK           | Whiteboard.lastAction == Service getElements
+10/11/2023;13:16:02.000469; assert OK           | Whiteboard.lastAction == Service chat: You lost...
+10/11/2023;13:16:02.000471; script OK           | all verifications passed with OK status
+10/11/2023;13:16:02.000473; script end          | script terminated after 3332 ms
+all instructions have been handled...
+script has ended...

@@ -418,13 +418,13 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Downloads\\Whiteboard\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.140.238",
+                        "ipAddress": "172.17.149.175",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.140.238",
+                        "ipAddress": "172.17.149.175",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -490,7 +490,7 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\venv\\Scripts\\python.exe C:/Users/trani/Desktop/speech-reco-motus/Motus_game/src/main.py --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.140.238",
+                        "ipAddress": "172.17.149.175",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -542,7 +542,7 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\venv\\Scripts\\python.exe C:/Users/trani/Desktop/speech-reco-motus/Speech_reco/src/main.py --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.140.238",
+                        "ipAddress": "172.17.149.175",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -640,13 +640,25 @@
                     {
                         "commandLine": "\"C:\\Program Files\\Ingescape\\Ingescape Circle\\igs.exe\" --device Wi-Fi --port 5670 --script C:\\Users\\trani\\Desktop\\speech-reco-motus\\test_whiteboard.txt",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.140.238",
+                        "ipAddress": "172.17.149.175",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
                         "commandLine": "\"C:\\Program Files\\Ingescape\\Ingescape Circle\\igs.exe\" --device Wi-Fi --port 5670 --script C:\\Users\\trani\\Desktop\\speech-reco-motus\\tests\\test_motus_game.txt",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.140.238",
+                        "ipAddress": "172.17.149.175",
+                        "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "\"C:\\Program Files\\Ingescape\\Ingescape Circle\\igs.exe\" --device Wi-Fi --port 5670 --script C:\\Users\\trani\\Desktop\\speech-reco-motus\\tests\\test_motus_game_win.txt",
+                        "hostname": "LAPTOP-G6CQMDG6",
+                        "ipAddress": "172.17.149.175",
+                        "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "\"C:\\Program Files\\Ingescape\\Ingescape Circle\\igs.exe\" --device Wi-Fi --port 5670 --script C:\\Users\\trani\\Desktop\\speech-reco-motus\\tests\\test_motus_game_lose.txt",
+                        "hostname": "LAPTOP-G6CQMDG6",
+                        "ipAddress": "172.17.149.175",
                         "mac": "0C:9A:3C:57:E4:73"
                     }
                 ],
@@ -655,7 +667,7 @@
                     "isCollapsed": false,
                     "positionX": 1112,
                     "positionY": 302,
-                    "positionZ": 10.109999999999829,
+                    "positionZ": 10.149999999999828,
                     "width": 292
                 }
             }
@@ -799,7 +811,7 @@
             },
             {
                 "data": {
-                    "entry 0": "chaton"
+                    "entry 0": "fleur"
                 },
                 "definition": {
                     "description": "",
@@ -834,7 +846,7 @@
                     "isCollapsed": false,
                     "positionX": 346,
                     "positionY": 462,
-                    "positionZ": 10.07999999999983,
+                    "positionZ": 10.159999999999828,
                     "width": 256
                 }
             },

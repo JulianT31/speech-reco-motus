@@ -5,33 +5,31 @@
 
 
 // First word
-Motus_game.word = "pomme"
-assert Whiteboard.lastAction == "Service chat: You tried : pomme"
+Motus_game.word = "clef"
+assert Whiteboard.lastAction == "Service chat: You tried : clef"
 
 // Verify the letter display (shapes & letters)
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 100, 160, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 120, 180, p, #000000"
+assert Whiteboard.lastAction == "Service addText: 120, 180, c, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 160, 160, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 180, 180, o, #000000"
+assert Whiteboard.lastAction == "Service addText: 180, 180, l, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 220, 160, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 240, 180, m, #000000"
+assert Whiteboard.lastAction == "Service addText: 240, 180, e, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 280, 160, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 300, 180, m, #000000"
-assert Whiteboard.lastAction ~ "Service addShape: rectangle, 340, 160, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 360, 180, e, #000000"
+assert Whiteboard.lastAction == "Service addText: 300, 180, f, #000000"
 
 
 // 2nd word
-Motus_game.word = "ciel"
-assert Whiteboard.lastAction == "Service chat: You tried : ciel"
+Motus_game.word = "chat"
+assert Whiteboard.lastAction == "Service chat: You tried : chat"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 100, 220, 60, 60, #(.*), #000000, 1"
 assert Whiteboard.lastAction == "Service addText: 120, 240, c, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 160, 220, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 180, 240, i, #000000"
+assert Whiteboard.lastAction == "Service addText: 180, 240, h, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 220, 220, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 240, 240, e, #000000"
+assert Whiteboard.lastAction == "Service addText: 240, 240, a, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 280, 220, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 300, 240, l, #000000"
+assert Whiteboard.lastAction == "Service addText: 300, 240, t, #000000"
 
 
 // 3rd word
@@ -47,15 +45,15 @@ assert Whiteboard.lastAction ~ "Service addShape: rectangle, 280, 280, 60, 60, #
 assert Whiteboard.lastAction == "Service addText: 300, 300, l, #000000"
 
 // 3rd word and failed
-Motus_game.word = "ciel"
-assert Whiteboard.lastAction == "Service chat: You tried : ciel"
+Motus_game.word = "cuir"
+assert Whiteboard.lastAction == "Service chat: You tried : cuir"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 100, 340, 60, 60, #(.*), #000000, 1"
 assert Whiteboard.lastAction == "Service addText: 120, 360, c, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 160, 340, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 180, 360, i, #000000"
+assert Whiteboard.lastAction == "Service addText: 180, 360, u, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 220, 340, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 240, 360, e, #000000"
+assert Whiteboard.lastAction == "Service addText: 240, 360, i, #000000"
 assert Whiteboard.lastAction ~ "Service addShape: rectangle, 280, 340, 60, 60, #(.*), #000000, 1"
-assert Whiteboard.lastAction == "Service addText: 300, 360, l, #000000"
+assert Whiteboard.lastAction == "Service addText: 300, 360, r, #000000"
 assert Whiteboard.lastAction == "Service getElements"
 assert Whiteboard.lastAction == "Service chat: You lost..."
