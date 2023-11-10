@@ -19,7 +19,20 @@ Download the Whiteboard app [here](https://ingescape.com/upssitech/Whiteboard.zi
 
 You need to add a parameter to run a python agent.
 
-With pycharm go to => Edit Configuration => parameters => Write `--device Wi-Fi` => save
+With pycharm go to => Edit Configuration => parameters => Write `--device Wi-Fi` => save-
+
+
+## Run a test 
+
+You need to be inside the folder `Ingescape\Ingescape Circle` to access `igs.exe`
+
+Then, run the commande `igs.exe --device Wi-Fi --port 5670 --script <test_path>` 
+
+Warning to execute a test, you need to launch all agents in this order, to be sur to skip the init process : 
+ - Whiteboard
+ - Motus_game agent
+ - Test
+
 
 
 
