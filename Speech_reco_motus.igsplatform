@@ -418,13 +418,13 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Downloads\\Whiteboard\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.57.178",
+                        "ipAddress": "172.17.140.238",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\Whiteboard\\Whiteboard.exe --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.57.178",
+                        "ipAddress": "172.17.140.238",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -490,7 +490,7 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\venv\\Scripts\\python.exe C:/Users/trani/Desktop/speech-reco-motus/Motus_game/src/main.py --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.57.178",
+                        "ipAddress": "172.17.140.238",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -542,7 +542,7 @@
                     {
                         "commandLine": "C:\\Users\\trani\\Desktop\\speech-reco-motus\\venv\\Scripts\\python.exe C:/Users/trani/Desktop/speech-reco-motus/Speech_reco/src/main.py --device Wi-Fi",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.57.178",
+                        "ipAddress": "172.17.140.238",
                         "mac": "0C:9A:3C:57:E4:73"
                     },
                     {
@@ -555,9 +555,9 @@
                 "view": {
                     "height": 40,
                     "isCollapsed": false,
-                    "positionX": 649,
-                    "positionY": 297,
-                    "positionZ": 9.969999999999832,
+                    "positionX": 693,
+                    "positionY": 290,
+                    "positionZ": 10.129999999999828,
                     "width": 252
                 }
             },
@@ -640,7 +640,13 @@
                     {
                         "commandLine": "\"C:\\Program Files\\Ingescape\\Ingescape Circle\\igs.exe\" --device Wi-Fi --port 5670 --script C:\\Users\\trani\\Desktop\\speech-reco-motus\\test_whiteboard.txt",
                         "hostname": "LAPTOP-G6CQMDG6",
-                        "ipAddress": "172.17.57.178",
+                        "ipAddress": "172.17.140.238",
+                        "mac": "0C:9A:3C:57:E4:73"
+                    },
+                    {
+                        "commandLine": "\"C:\\Program Files\\Ingescape\\Ingescape Circle\\igs.exe\" --device Wi-Fi --port 5670 --script C:\\Users\\trani\\Desktop\\speech-reco-motus\\tests\\test_motus_game.txt",
+                        "hostname": "LAPTOP-G6CQMDG6",
+                        "ipAddress": "172.17.140.238",
                         "mac": "0C:9A:3C:57:E4:73"
                     }
                 ],
