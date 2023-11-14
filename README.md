@@ -1,39 +1,47 @@
-# Motus with speech regonition
+# Motus avec reconnaissance vocal
 
-This repo is a little game like the real game Motus but with some speech recognition. This app uses Ingescape by Ingenuity.io
+Projet 3A SRI UPSSITECH 2023
 
-This repo is an UPSSITECH 3A project.
+Auteurs : Julian TRANI & Pauline JOBERT
 
-Author : @JulianT31 & @PaulineJobs
+![Review](/assets/review_game.png)
 
-![](assets/review_game.png)
+**L'application a été implémentée et testée sous Windows**. Nous ne garantissons pas son fonctionnement sous d'autres systèmes d'exploitation tels que Linux ou MacOS.
 
-## Install
+## Installation de l'application
 
-You need to have python with python 3.10 recommended and `ingesacape` lib installed.
-You need open the `Speech_reco_motus.igsplatform` with the `Ingescape Circle` software 
+Pour installer l'application et de la rendre fonctionnelle, il faut :
 
-Download the Whiteboard app [here](https://ingescape.com/upssitech/Whiteboard.zip), and put it on the repo and then run `.\Whiteboard\Whiteboard.exe --device Wi-Fi` to launch the Whiteboard
+-   Cloner le repo [https://github.com/JulianT31/speech-reco-motus](https://github.com/JulianT31/speech-reco-motus) sur votre ordinateur
+-   Télécharger et déposer l'application Whiboard dans le répertoire `/speech-reco-motus`
 
-## Run 
+## Setup de l'environnement des différents agents python
 
-You need to add a parameter to run a python agent.
+Au niveau de l'environnement python, nous utilisons la version 3.10. Les différents agents utilisent les libraires suivantes :
 
-With pycharm go to => Edit Configuration => parameters => Write `--device Wi-Fi` => save-
+-   la version 3.6.4 de la libraire `ingescape`
+-   la version 3.10.0 de `SpeechRecognition`
+-   la version 0.2.13 de `PyAudio`
 
+Pour installer toutes libraires, vous pouvez utiliser le fichier `{requirements.txt` et exécuter la commande suivante : `pip install -r requirements.txt` dans le répertoire pour installer ces libraires. Sinon, vous pouvez les installer chacune manuellement.
 
-## Run a test 
+Pour utiliser les différents agents python (`Speech_reco` / `Motus_game`), il faut les exécuter avec l'option suivante suivante : \verb|--device Wi-Fi|
 
-You need to be inside the folder `Ingescape\Ingescape Circle` to access `igs.exe`
+Si vous utilisez `PyCharm`, vous pouvez directement ajouter cette option dans les paramètres de configuration (Run/Debug Configurations) comme sur la figure
 
-Then, run the commande `igs.exe --device Wi-Fi --port 5670 --script <test_path>` 
+![Pycharm](/assets/param_pycharm.png)
 
-Warning to execute a test, you need to launch all agents in this order, to be sur to skip the init process : 
- - Whiteboard
- - Motus_game agent
- - Test
+## Lancement de l'application
 
+Pour lancer correctement l'application, il faut respecter l'ordre de lancement :
 
+-   Le Whiteboard, avec un terminal dans le répertoire courant, exécuter la commande suivante `.\Whiteboard\Whiteboard.exe --device Wi-Fi`
+-   L'agent python `Speech_rec` avec l'option `--device Wi-Fi` comme expliqué précédemment
+-   L'agent python `Motus_game` avec l'option `--device Wi-Fi` comme expliqué précédemment
 
+## Utilisation de l'application
 
+Une fois l'application lancée, pour proposer un mot par la reconnaissance vocale il faut lancer une impulsion avec `Ingescape Circle` sur l'agent `Speech_reco`. Le message _"Recording in progress. Speak now..."_ s'affiche sur la console du Whiteboard qui mentionne que l'agent écoute l'entrée audio.
+Il faut répéter l'opération pour tout nouveau mot à ajouter dans le jeu.
 
+Attention, s'il y a du bruit ambiant autour du micro, la reconnaissance ne sera pas très performante.
