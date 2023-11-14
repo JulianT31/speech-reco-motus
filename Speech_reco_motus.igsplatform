@@ -688,12 +688,6 @@
             {
                 "fromAgent": "Motus_game",
                 "fromInput": "word",
-                "toAgent": "6e6fb4bb-74fd-4ee6-b4f1-32f9c4c32344",
-                "toOutput": "value"
-            },
-            {
-                "fromAgent": "Motus_game",
-                "fromInput": "word",
                 "toAgent": "Speech_reco",
                 "toOutput": "word"
             },
@@ -720,6 +714,12 @@
                 "fromInput": "Whiteboard.lastAction",
                 "toAgent": "Whiteboard",
                 "toOutput": "lastAction"
+            },
+            {
+                "fromAgent": "Motus_game",
+                "fromInput": "word",
+                "toAgent": "6e6fb4bb-74fd-4ee6-b4f1-32f9c4c32344",
+                "toOutput": "value"
             }
         ],
         "splits": [
@@ -811,47 +811,6 @@
             },
             {
                 "data": {
-                    "entry 0": "fleur"
-                },
-                "definition": {
-                    "description": "",
-                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
-                    "inputs": [
-                        {
-                            "description": "",
-                            "name": "trigger",
-                            "type": "IMPULSION"
-                        }
-                    ],
-                    "isDynamic": false,
-                    "name": "",
-                    "outputs": [
-                        {
-                            "description": "",
-                            "name": "value",
-                            "type": "STRING"
-                        }
-                    ],
-                    "parameters": [
-                    ],
-                    "services": [
-                    ],
-                    "version": ""
-                },
-                "identity": "6e6fb4bb-74fd-4ee6-b4f1-32f9c4c32344",
-                "instances": [
-                ],
-                "view": {
-                    "height": 52,
-                    "isCollapsed": false,
-                    "positionX": 346,
-                    "positionY": 462,
-                    "positionZ": 10.159999999999828,
-                    "width": 256
-                }
-            },
-            {
-                "data": {
                     "entry 0": ""
                 },
                 "definition": {
@@ -887,7 +846,48 @@
                     "isCollapsed": false,
                     "positionX": 346,
                     "positionY": 324,
-                    "positionZ": 10.119999999999829,
+                    "positionZ": 10.209999999999827,
+                    "width": 256
+                }
+            },
+            {
+                "data": {
+                    "entry 0": "fleur"
+                },
+                "definition": {
+                    "description": "",
+                    "family": "fbba66d6-8d60-4694-b5fa-63b6f3f51e63",
+                    "inputs": [
+                        {
+                            "description": "",
+                            "name": "trigger",
+                            "type": "IMPULSION"
+                        }
+                    ],
+                    "isDynamic": false,
+                    "name": "",
+                    "outputs": [
+                        {
+                            "description": "",
+                            "name": "value",
+                            "type": "STRING"
+                        }
+                    ],
+                    "parameters": [
+                    ],
+                    "services": [
+                    ],
+                    "version": ""
+                },
+                "identity": "6e6fb4bb-74fd-4ee6-b4f1-32f9c4c32344",
+                "instances": [
+                ],
+                "view": {
+                    "height": 52,
+                    "isCollapsed": false,
+                    "positionX": 346,
+                    "positionY": 462,
+                    "positionZ": 10.199999999999827,
                     "width": 256
                 }
             }

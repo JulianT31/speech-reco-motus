@@ -127,7 +127,7 @@ def word_input_callback(iop_type, name, value_type, value, my_data):
 
         if motus_game.is_win():
             igs.service_call("Whiteboard", "getElements", None, "")
-            igs.service_call("Whiteboard", "chat", "You win !", "")
+            igs.service_call("Whiteboard", "chat", "You won !", "")
             motus_game.reset_game()
             init_display(motus_game)
         else:
