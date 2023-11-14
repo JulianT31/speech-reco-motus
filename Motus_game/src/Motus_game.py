@@ -32,9 +32,9 @@ class MotusGame(metaclass=Singleton):
         self.nb_try_max = 4
         self.word_to_discover = ""
         # if you want to exec the wining test uncomment this line
-        self.word_database = ["fleur"]
+        # self.word_database = ["fleur"]
         # if you want to exec the wining test comment this line
-        # self.word_database = ["fleur", "table", "soleil", "plage", "bonjour", "chien", "chaton", "orange","forêt"]
+        self.word_database = ["fleur", "table", "soleil", "plage", "bonjour", "chien", "chaton", "orange","forêt"]
 
 
         self.init_game()
